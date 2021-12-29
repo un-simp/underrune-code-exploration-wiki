@@ -1,4 +1,6 @@
 # Contributors
+<html><table><tr><td align="center"><a href=https://github.com/The0Show><img src=https://avatars.githubusercontent.com/u/62229104?v=4 width="100;" alt=The0Show/><br /><sub style="font-size:14px"><b>The0Show</b></sub></a></td><td align="center"><a href=https://github.com/gitbook-bot><img src=https://avatars.githubusercontent.com/u/31919211?v=4 width="100;" alt=GitBook Bot/><br /><sub style="font-size:14px"><b>GitBook Bot</b></sub></a></td></tr></table></html>
+
 
 This is a list of contributors to this wiki. Thank you everyone for your help!
 
