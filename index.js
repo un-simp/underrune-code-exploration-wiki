@@ -2,10 +2,7 @@ const { Octokit } = require("@octokit/rest");
 
 const args = process.argv;
 
-args.pop();
-args.pop();
-
-console.log(args[0]);
+console.log(args);
 
 const octokit = new Octokit({
     auth: args[0],
