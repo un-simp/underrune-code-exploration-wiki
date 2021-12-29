@@ -18,12 +18,13 @@ const octokit = new Octokit({
         let content =
             "<!-- This page is updated by GitHub Actions automatically, any changes will be overriden! -->\n\n# Contributors\nThis is a list of contributors to this wiki. Thank you everyone for your help!<br>";
 
-        const excludedUsers = [31919211];
+        const excludedUsers = [31919211, 41898282];
 
         for (let index = 0; index < contribs.length; index++) {
             const element = contribs[index];
 
             if (excludedUsers.includes(element.id)) break;
+            if (element.type.toLowerCase() === "bot") break;
 
             content += `<br>[${element.login}](${element.html_url})`;
         }
