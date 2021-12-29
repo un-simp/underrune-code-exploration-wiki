@@ -19,7 +19,10 @@ jobs:
         uses: Maanuj-Vora/List-Contributors@1.0.3
         with:
           REPO_NAME: '${{github.repository}}'
-          CONTRIBUTOR: '# Contributors'
+          CONTRIBUTOR: |
+            # Contributors
+
+            This is a list of contributors to this wiki. Thank you everyone for your help!
           ACCESS_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
           FILEPATH: "/contributing/contributors.md"
           # Commit message
