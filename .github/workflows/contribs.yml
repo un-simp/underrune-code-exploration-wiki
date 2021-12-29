@@ -17,7 +17,6 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - working-directory: ".github/contributors"
     - uses: actions/checkout@v2
     - working-directory: ".github/contributors"
     - name: Use Node.js ${{ matrix.node-version }}
@@ -25,7 +24,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - working-directory: ".github/contributors"
     - run: npm ci
     - working-directory: ".github/contributors"
     - run: 'node index.js ${{secrets.GITHUB_TOKEN}}'
