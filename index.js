@@ -16,7 +16,7 @@ const octokit = new Octokit({
             .then((res) => res.data);
 
         let content =
-            "# Contributors\nThis is a list of contributors to this wiki. Thank you everyone for your help!\n";
+            "# Contributors\nThis is a list of contributors to this wiki. Thank you everyone for your help!";
 
         const excludedUsers = [31919211];
 
@@ -25,7 +25,7 @@ const octokit = new Octokit({
 
             if (excludedUsers.includes(element.id)) break;
 
-            content += `\n[${element.login}](${element.html_url})`;
+            content += `<br>[${element.login}](${element.html_url})`;
         }
 
         const sha = await octokit
