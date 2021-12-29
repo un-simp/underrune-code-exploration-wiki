@@ -32,7 +32,7 @@ const octokit = new Octokit({
             .request("GET /repos/{owner}/{repo}/contents/{path}", {
                 owner: "The0Show",
                 repo: "underrune-code-exploration-wiki",
-                path: "contents/contributing",
+                path: "contributing",
             })
             .then((res) => res[1].sha);
 
