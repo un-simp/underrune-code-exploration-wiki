@@ -5,6 +5,8 @@ const args = process.argv;
 args.pop();
 args.pop();
 
+console.log(args[0]);
+
 const octokit = new Octokit({
     auth: args[0],
 });
@@ -35,8 +37,8 @@ const octokit = new Octokit({
             owner: "The0Show",
             repo: "underrune-code-exploration-wiki",
             path: "contributing/contributors.md",
-            message: "Updated contributors.md",
-            content: content,
+            message: "Updated contributors",
+            content: Buffer.from(content, "utf8").toString("base64url"),
         });
     } catch (e) {
         console.error(e);
