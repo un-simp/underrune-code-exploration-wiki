@@ -16,7 +16,7 @@ const octokit = new Octokit({
             .then((res) => res.data);
 
         let content =
-            "# Contributors\nThis is a list of contributors to this wiki. Thank you everyone for your help!";
+            "# Contributors\nThis is a list of contributors to this wiki. Thank you everyone for your help!<br>";
 
         const excludedUsers = [31919211];
 
