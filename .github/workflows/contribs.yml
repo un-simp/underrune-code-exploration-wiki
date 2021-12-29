@@ -23,6 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - working-directory: ".github/contributors"
-    - run: npm ci
-    - run: 'node index.js ${{secrets.GITHUB_TOKEN}}'
+    - working-directory: "/.github/contributors"
+    - run: |
+        npm ci
+        node index.js ${{secrets.GITHUB_TOKEN}}
