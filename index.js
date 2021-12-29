@@ -42,7 +42,7 @@ const octokit = new Octokit({
             path: "contributing/contributors.md",
             message: "Updated contributors",
             sha: sha,
-            content: Buffer.from(content, "utf8").toString("base64url"),
+            content: Buffer.from(content, "utf8").toString("base64"),
         });
     } catch (e) {
         console.error(e);
