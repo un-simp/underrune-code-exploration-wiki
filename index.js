@@ -16,7 +16,7 @@ const octokit = new Octokit({
             .then((res) => res.data);
 
         let content =
-            "<!-- This page is updated by GitHub Actions automatically, any changes will be overriden! -->\n\n# Contributors\nThis is a list of contributors to this wiki. Thank you everyone for your help!<br>";
+            "<!-- This page is updated by GitHub Actions automatically, any changes will be overriden! -->\nThis is a list of contributors to this wiki. Thank you everyone for your help!<br>";
 
         const excludedUsers = [31919211, 41898282];
 
