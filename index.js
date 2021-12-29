@@ -34,7 +34,7 @@ const octokit = new Octokit({
                 repo: "underrune-code-exploration-wiki",
                 path: "contributing",
             })
-            .then((res) => res[1].sha);
+            .then((res) => res.data[1].sha);
 
         await octokit.request("PUT /repos/{owner}/{repo}/contents/{path}", {
             owner: "The0Show",
