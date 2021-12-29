@@ -29,21 +29,24 @@ const octokit = new Octokit({
         }
 
         const sha = await octokit
-            .request("GET /repos/{owner}/{repo}/contents/{path}", {
+            .request("GET /repos/{owner}/{repo}/contents/{path}?ref=welcome", {
                 owner: "The0Show",
                 repo: "underrune-code-exploration-wiki",
                 path: "contents/contributing",
             })
             .then((res) => res[1].sha);
 
-        await octokit.request("PUT /repos/{owner}/{repo}/contents/{path}", {
-            owner: "The0Show",
-            repo: "underrune-code-exploration-wiki",
-            path: "contributing/contributors.md",
-            message: "Updated contributors",
-            sha: sha,
-            content: Buffer.from(content, "utf8").toString("base64url"),
-        });
+        await octokit.request(
+            "PUT /repos/{owner}/{repo}/contents/{path}?ref=welcome",
+            {
+                owner: "The0Show",
+                repo: "underrune-code-exploration-wiki",
+                path: "contributing/contributors.md",
+                message: "Updated contributors",
+                sha: sha,
+                content: Buffer.from(content, "utf8").toString("base64url"),
+            }
+        );
     } catch (e) {
         console.error(e);
     }
