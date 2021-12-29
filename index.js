@@ -32,9 +32,9 @@ const octokit = new Octokit({
             .request("GET /repos/{owner}/{repo}/contents/{path}?ref=welcome", {
                 owner: "The0Show",
                 repo: "underrune-code-exploration-wiki",
-                path: "contents/contributing",
+                path: "contributing",
             })
-            .then((res) => res[1].sha);
+            .then((res) => res.data[1].sha);
 
         await octokit.request(
             "PUT /repos/{owner}/{repo}/contents/{path}?ref=welcome",
@@ -44,7 +44,7 @@ const octokit = new Octokit({
                 path: "contributing/contributors.md",
                 message: "Updated contributors",
                 sha: sha,
-                content: Buffer.from(content, "utf8").toString("base64url"),
+                content: Buffer.from(content, "utf8").toString("base64"),
             }
         );
     } catch (e) {
