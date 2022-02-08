@@ -5,9 +5,22 @@ Undertale is written in Gamemaker. Gamemaker is a game engine created by YoYo ga
 
 - Gamemaker "Classic" (Verisons 1-8)
 - Gamemaker: Studio (all version after 8)
+
 Undertale is written in Gamemaker: Studio.
 
 ### So... How do we decompile it?
+Decompiling GMC and GMS games are quite easy.
+
+You will need
+- A Computer
+- A copy of Undertale
+- [Altar.NET](https://gitlab.com/PoroCYon/Altar.NET/uploads/b06607af0c309db3814e08600fbe87ee/altar-20171129.zip)
+- Mono if on Linux (Also MacOS?)
+
+It may be useful to have
+- [Gamemaker Studio 2](https://www.yoyogames.com/) (Trial Should be fine)
+
+### Ok here is how you actually decompile it.
 
 
 
