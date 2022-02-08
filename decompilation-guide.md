@@ -22,6 +22,10 @@ It may be useful to have
 
 ### Ok here is how you actually decompile it.
 
+First we need to find your data.win file
+it is usally in your Game files. 
+
+To get there you need to go to steam -> Undertale -> click on the cog -> Properties -> Local files -> Show local game Files
 
 
 
