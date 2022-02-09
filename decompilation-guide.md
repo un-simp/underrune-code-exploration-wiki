@@ -2,7 +2,7 @@ Note: The images shown were taken on Arch Linux with XFCE4 desktop but it should
 # Decompiling Undertale 
 So.. You have stumbled to this wiki wanting to find out more about Undertale? Want to decompile it and release all its secrets? Well your in the right place! In this md file i will show you how to decompile Undertale!!
 ### A bit of background
-Undertale is written in Gamemaker. Gamemaker is a game engine created by YoYo games as a entry level game engine. it supports block based coding and text with a language called "GameMaker Language". There are 2 versions of gamemaker
+Undertale is written in Gamemaker. Gamemaker is a game engine created by YoYo games as a entry level game engine. it supports block based coding and text based with a language called "GameMaker Language". There are 2 versions of gamemaker.
 
 - Gamemaker "Classic" (Verisons 1-8)
 - Gamemaker: Studio (all version after 8)
@@ -24,17 +24,16 @@ It may be useful to have
 
 ### Ok here is how you actually decompile it.
 
-First we need to find your data.win file
-it is usally in your Game files. 
+First we need to find your data.win file, it is usally in your game files. 
 
-To get there you need to go to steam -> Undertale -> click on the cog -> Properties -> Local files -> Show local game Files.
+To get there you need to go to Steam -> Undertale -> click on the cog -> Properties -> Local files -> Show local game files.
 
-Then you actually need to decompile the file 
+Then you actually need to decompile the file.
 
-if you are on windows you can drag the data.win onto the decompile batch file and it will do the same
+if you are on windows you can drag the data.win onto the decompile batch file and it will do the same as the folowing instructions.
 
 - Open a terminal emulator (Terminal on MacOS, CMD or PowerShell on Windows and whatever terminal emulator you use on linux.)
-- "cd" into the Altar folder
+- "cd" into the Altar folder.
 - Run './icantrememberwhatthefileiscalled.(bat on windows, .sh on everything else) (your data .win file (TIP: Drag the data.win into the terminal and it will autofill the location))'
 
 
