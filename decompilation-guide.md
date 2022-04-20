@@ -1,4 +1,4 @@
-Note: The images shown were taken on Arch Linux with XFCE4 desktop but it should apply to all OSes
+Note: The images shown were taken on KDE Neon with K desktop but it should apply to all OSes
 # Decompiling Undertale 
 So.. You have stumbled to this wiki wanting to find out more about Undertale? Want to decompile it and release all its secrets? Well your in the right place! In this md file i will show you how to decompile Undertale!!
 ### A bit of background
@@ -16,17 +16,25 @@ You will need
 - A Computer
 - A copy of Undertale
 - [Altar.NET](https://gitlab.com/PoroCYon/Altar.NET/uploads/b06607af0c309db3814e08600fbe87ee/altar-20171129.zip)
-- Mono if on Linux (Also MacOS?)
+- Mono if on Linux/MacOs
 - Some sort of text editor. I reccomend [VSCodium](https://vscodium.com)
 
 It may be useful to have
 - [Gamemaker Studio 2](https://www.yoyogames.com/) (Trial Should be fine)
-
+### Notes
+- the name of the file on macos is game.ios and game.unx on Linux System so when we refer to data.win you use the correct format.
 ### Ok here is how you actually decompile it.
 
 First we need to find your data.win file, it is usally in your game files. 
 
 To get there you need to go to Steam -> Undertale -> click on the cog -> Properties -> Local files -> Show local game files.
+![LocalFiles.](.gitbook/assets/steam-files.png)
+
+On Windows your data.win file is in the root directory
+
+On MacOS your game.ios is in the Resources directory inside the .app
+
+On Linux/Unix your game.unx is in the assets directory
 
 Then you actually need to decompile the file.
 
@@ -34,7 +42,9 @@ if you are on windows you can drag the data.win onto the decompile batch file an
 
 - Open a terminal emulator (Terminal on MacOS, CMD or PowerShell on Windows and whatever terminal emulator you use on linux.)
 - "cd" into the Altar folder.
-- Run './icantrememberwhatthefileiscalled.(bat on windows, .sh on everything else) (your data .win file (TIP: Drag the data.win into the terminal and it will autofill the location))'
+- Run './decompile-data.(bat on windows, .sh on everything else) (your data .win file (TIP: Drag the data.win into the terminal and it will autofill the location))'
+- IMPORTANT. IF YOU ARE ON LINUX YOU NEED TO REMOVE THE FIRST LINES UP TO THE MONO COMMAND AND CHANGE ALTAR TO ALTAR.EXE
+- If Everything goes well this should happen 
 
 
 
